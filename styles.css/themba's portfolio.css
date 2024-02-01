@@ -1,0 +1,305 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+  background-image: url(images/Background-picture.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+nav {
+  background-color: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav li {
+  height: 50px;
+}
+nav a {
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+nav a:hover {
+  background-color: lightgray;
+}
+nav li:first-child {
+  margin-right: auto;
+}
+.side-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.392);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.side-bar li {
+  width: 100%;
+}
+.side-bar a {
+  width: 100%;
+}
+.nav-logo {
+  width: clamp(5rem, 10vw, 6.8rem);
+  position: relative;
+  left: -20px;
+}
+.lets-talk-button {
+  font-size: clamp(0.9rem, 1.1vw, 2rem);
+  background-color: burlywood;
+  color: black;
+  border: none;
+  border-radius: 0.5vw;
+  padding: 0.6vw 1vw;
+  margin-right: 1vw;
+  cursor: pointer;
+  text-decoration: none;
+}
+.close-hamburger-icon {
+  display: none;
+}
+@media(max-width: 800px){
+  .hideOnMobile {
+    display: none;
+  }
+}
+.home-page-container {
+  margin-top: 30px;
+  margin-left: 15px;
+  left: 40px;
+  top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.availability-text {
+  font-size: clamp(1.3rem, 3vw, 2rem);
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+.availability-line {
+  height: 2px;
+  background-color: black;
+  width: clamp(13rem, 21vw, 29rem);
+  margin-bottom: 40px;
+}
+.expertise-and-picture {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  vertical-align: middle;
+}
+.expertise-description {
+  font-size: clamp(1.5rem, 5vw, 5rem);
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 20px;
+}
+.picture-of-themba {
+  height: auto;
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+}
+.break-text {
+  color: rgb(141, 80, 0);
+}
+.slogan {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  left: 0vw;
+  right: 0vw;
+  background-color: black;
+  color: white;
+  height: 7vw;
+  font-size: clamp(1.3rem, 3vw, 2rem);
+  font-weight: bold;
+  align-items: center;
+}
+.snowflake-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 clamp(3rem, 10vw, 4rem) rgba(0, 0, 0, 0.2);
+  margin: 7vw;
+  padding: 2vw 3vw;
+  border-radius: 1vw;
+}
+.about-title {
+  font-size: clamp(1.5rem, 6vw, 5rem);
+  font-weight: bold;
+  margin-top: 1.5vw;
+  margin-bottom: 3vw;
+  display: flex;
+}
+.about-info {
+  font-size: clamp(0.8rem, 1.4vw, 2rem);
+}
+.skillset-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vw;
+  margin-bottom: 7vw;
+}
+.skillset-title {
+  font-size: clamp(1.5rem, 6vw, 5rem);
+  font-weight: bold;
+  margin-bottom: 3vw;
+}
+.skills-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  margin-right: 1.5vw;
+  margin-left: 1.5vw;
+  column-gap: clamp(2rem, 5vw, 5rem);
+  font-size: clamp(1.2rem,1.5vw, 2rem);
+}
+.skill {
+  font-size: clamp(0.8rem, 2vw, 4rem);
+  background-color: rgb(211, 123, 0);
+  color: black;
+  padding: 1vw;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 1vw;
+  backdrop-filter: blur(90px);
+  border-radius: 1vw;
+}
+.skill:hover {
+  box-shadow: 0 0 clamp(2rem, 5vw, 1rem) rgba(0, 0, 0, 01);
+}
+.education-container {
+  margin-top: 10vw;
+  display: flex;
+  flex-direction: column;
+}
+.education-title {
+  font-weight: bold;
+  font-size: clamp(1.5rem, 6vw, 5rem);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4vw;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 3vw;
+  padding: 0 4vw;
+  column-gap: 8vw;
+}
+.card-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 100%;
+  margin-bottom: 1.5vw;
+  width: clamp(10rem, 40vw, 25rem);
+  background-color: rgb(252, 186, 99);
+  padding: 2vw;
+  border-radius: 2vw;
+}
+.card-container:hover{
+  background-color: orange;
+  color: black;
+}
+.card-title {
+  font-weight: bold;
+}
+.experience-container {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-left: 5vw;
+margin-right: 5vw;
+margin-top: 10vw;
+border-style: solid;
+border-color: rgb(252, 186, 99);
+background-color: white;
+border-color: white;
+padding: 2vw;
+border-radius: 0vw;
+}
+.experience-container:hover {
+background-color: rgb(252, 186, 99);
+border-color: rgb(252, 186, 99);
+}
+.experience-title {
+font-weight: bold;
+font-size: clamp(1.5rem, 6vw, 5rem);
+align-items: center;
+}
+.company-and-year {
+font-size: clamp(1.5rem, 4vw, 5rem);
+margin-top: 4vw;
+margin-bottom: 4vw;
+display: flex;
+text-decoration: underline;
+}
+.experience-description {
+font-size: clamp(0.8rem, 1.4vw, 2rem);
+}
+.contact-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 10vw;
+}
+.contact-title {
+font-weight: bold;
+font-size: clamp(2rem, 7vw, 6rem);
+margin-bottom: 2vw;
+display: flex;
+}
+.contact-description {
+font-size: clamp(1rem, 2vw, 4rem);
+margin-bottom: 1.5vw;
+}
+.contact-email-address {
+font-size: clamp(1.2rem, 5vw, 4rem);
+font-weight: bold;
+margin-bottom: 1.5vw;
+display: flex;
+}
+.contact-icons-container {
+margin-bottom: 7vw;
+display: flex;
+flex-direction: row;
+column-gap: 4vw;
+}
